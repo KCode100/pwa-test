@@ -31,3 +31,5 @@ Click install button to download app in URL bar (see image)
 - Workbox strategies
 
 [Workbox](https://developers.google.com/web/tools/workbox/modules/workbox-strategies#what_are_workbox_strategies)
+
+[Workbox template](https://developers.google.com/web/tools/workbox/guides/get-started)
