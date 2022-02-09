@@ -26,6 +26,10 @@ Click install button to download app in URL bar (see image)
 
 - [Generate a manifest.json!](https://www.simicart.com/manifest-generator.html/)
 
+- [Next-PWA docs](https://www.npmjs.com/package/next-pwa)
+
+- [Next and pwa youtube tutorial](https://www.youtube.com/watch?v=ARNN_zmrwcw)
+
 - offline persistence with firebase
 
 [See The Net Ninja tutorial on YouTube](https://www.youtube.com/watch?v=ciu62KLlwGQ&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=26)
