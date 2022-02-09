@@ -24,6 +24,8 @@ Click install button to download app in URL bar (see image)
 
 ## Resources and Todo
 
+- [Generate a manifest.json!](https://www.simicart.com/manifest-generator.html/)
+
 - offline persistence with firebase
 
 [See The Net Ninja tutorial on YouTube](https://www.youtube.com/watch?v=ciu62KLlwGQ&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=26)
