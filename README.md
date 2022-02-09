@@ -21,3 +21,7 @@ After a few seconds the "Add to home banner" will appear, and you can then use i
 Click install button to download app in URL bar (see image)
 
 ![Install button on chrome!](./images/install.png)
+
+## Todo - offline persistence with firebase
+
+[See The Net Ninja tutorial on YouTube](https://www.youtube.com/watch?v=ciu62KLlwGQ&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=26)
