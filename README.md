@@ -22,6 +22,12 @@ Click install button to download app in URL bar (see image)
 
 ![Install button on chrome!](./images/install.png)
 
-## Todo - offline persistence with firebase
+## Resources and Todo
+
+- offline persistence with firebase
 
 [See The Net Ninja tutorial on YouTube](https://www.youtube.com/watch?v=ciu62KLlwGQ&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=26)
+
+- Workbox strategies
+
+[Workbox](https://developers.google.com/web/tools/workbox/modules/workbox-strategies#what_are_workbox_strategies)
