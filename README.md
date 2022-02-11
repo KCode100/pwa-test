@@ -22,6 +22,10 @@ Click install button to download app in URL bar (see image)
 
 ![Install button on chrome!](./images/install.png)
 
+## Want to store static files in cache and also dynamic content when offline with Firebase?
+
+Checkout the static-caching-with-dynamic-firebase-caching branch for a working version
+
 ## Resources and Todo
 
 - [Generate a manifest.json!](https://www.simicart.com/manifest-generator.html/)
