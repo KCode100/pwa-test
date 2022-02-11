@@ -1,5 +1,12 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js';
-import { getFirestore, collection, getDocs, enableIndexedDbPersistence } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  enableIndexedDbPersistence,
+  doc,
+  onSnapshot
+} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAbZZdzAEqksS97eyREomtyR_EIfiLC7BA",
@@ -11,29 +18,25 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const colRef = collection(db, "users")
 
+// enable offline data persistence
 enableIndexedDbPersistence(db)
   .catch((err) => {
       if (err.code == 'failed-precondition') {
-          // Multiple tabs open, persistence can only be enabled
-          // in one tab at a a time.
-          // ...
+        console.log('error, probably Multiple tabs open, persistence can only be enabled in one tab at a a time.')
       } else if (err.code == 'unimplemented') {
-          // The current browser does not support all of the
-          // features required to enable persistence
-          // ...
+        console.log("The current browser does not support all of the features required to enable persistence")
       }
   });
 
-// Get a list of cities from your database
-async function getUsers(db) {
-  const usersCol = collection(db, 'users');
-  const usersSnapshot = await getDocs(usersCol);
-  const usersList = usersSnapshot.docs.map(doc => doc.data());
-  console.log(usersList);
-}
-
-getUsers(db)
+const dataEl = document.querySelector('.user')
+// real time collection data
+onSnapshot(colRef, (snapshot) => {
+  snapshot.docs.forEach(doc => {
+    dataEl.innerHTML += doc.data().user
+  })
+})
 
 // only run if browser supports service workers
 if ("serviceWorker" in navigator) {
